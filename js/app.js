@@ -18,21 +18,23 @@ console.log('Età dell\'utente:' , userAge , 'anni');
 let travelPrice;
 
 travelPrice = numberKm * 0.21;
-console.log('Prezzo pieno del biglietto:' , travelPrice.toFixed(2) , '€');
+console.log('Prezzo pieno del biglietto:' , travelPrice , '€');
 
 // calcolare gli sconti se ci sono
-let discountTicket;
 
 if (userAge < 18) {
 
-    discountTicket = travelPrice * 0.8;
-    console.log('Prezzo scontato del biglietto:' , discountTicket.toFixed(2) , '€');
+    travelPrice = travelPrice * 0.8;
+    console.log('Prezzo scontato del biglietto:' , travelPrice , '€');
 
 }   else if (userAge > 65) {
 
-    discountTicket = travelPrice * 0.6;
-    console.log('Prezzo scontato del biglietto:' , discountTicket.toFixed(2) , '€');
+    travelPrice = travelPrice * 0.6;
+    console.log('Prezzo scontato del biglietto:' , travelPrice , '€');
 
 }
 
 // mostrare il prezzo finale con massimo due decimale
+
+const finalPrice = document.getElementById('price-output');
+finalPrice.innerHTML = travelPrice.toFixed(2) + ' €';
