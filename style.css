@@ -1,0 +1,9 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.box{
+    text-align: center;
+    padding: 30vh 0;
+}
