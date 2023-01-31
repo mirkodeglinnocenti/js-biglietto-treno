@@ -1,0 +1,30 @@
+.container-personal{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.card-header{
+    color: white;
+    background-color: #0B4076;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.card-footer{
+    color: white;
+    background-color: #CA3028;
+}
+
+.card-footer_text{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0;
+}
